@@ -25,6 +25,6 @@ document.querySelector("#joinbtn").addEventListener('click', ()=>{
     // putanie o imie usera
     connect.on('username', ()=>{
       connect.emit('username', document.querySelector("#username").value, UID);
-      window.location.href = "/index.html"
+      window.location.href = "/screen.html"
     })
 })
