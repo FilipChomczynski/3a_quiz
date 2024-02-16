@@ -2,7 +2,6 @@
        
         {
             "pytanie": "Co to jest programowanie obiektowe?",
-            "opis": "Opisz koncepcję programowania obiektowego.",
             "odp": [
               "Paradygmat programowania, który traktuje dane jako obiekty",
               "Metoda programowania, w której operacje są wykonywane na obiektach",
@@ -13,7 +12,6 @@
           },
           {
             "pytanie": "Czym różni się RAM od ROM?",
-            "opis": "Objaśnij różnice między pamięcią RAM a pamięcią ROM.",
             "odp": [
               "RAM (Random Access Memory) to pamięć odczytywalna i zapisywalna, używana do przechowywania danych tymczasowych",
               "ROM (Read-Only Memory) to pamięć tylko do odczytu, w której dane są trwale zapisane i nie mogą być modyfikowane",
@@ -24,7 +22,6 @@
           },
           {
             "pytanie": "Jak działa protokół HTTP?",
-            "opis": "Wyjaśnij zasady działania protokołu HTTP.",
             "odp": [
               "HTTP (Hypertext Transfer Protocol) to protokół komunikacyjny używany w World Wide Web",
               "Działa na zasadzie żądanie-odpowiedź, gdzie przeglądarka wysyła żądanie, a serwer udziela odpowiedzi",
@@ -35,7 +32,6 @@
           },
           {
             "pytanie": "Co to jest algorytm szyfrowania AES?",
-            "opis": "Opisz algorytm Advanced Encryption Standard (AES).",
             "odp": [
               "AES to zaawansowany standard szyfrowania, stosowany do zabezpieczania danych",
               "Wykorzystuje klucz do szyfrowania i deszyfrowania danych",
@@ -45,46 +41,62 @@
             "poprawna":3
           },
           {
-            "pytanie": "Co to jest programowanie obiektowe?",
-            "opis": "Opisz koncepcję programowania obiektowego.",
+            "pytanie": "Co to jest \"scope\" (zasięg) w kontekście programowania?",
             "odp": [
-              "Paradygmat programowania, który traktuje dane jako obiekty",
-              "Metoda programowania, w której operacje są wykonywane na obiektach",
-              "Sposób projektowania oprogramowania oparty na obiektach",
-              "Koncepcja, w której obiekty komunikują się ze sobą za pomocą wiadomości"
-            ],
-            "poprawna":0
-          },
-          {
-            "pytanie": "Czym różni się RAM od ROM?",
-            "opis": "Objaśnij różnice między pamięcią RAM a pamięcią ROM.",
-            "odp": [
-              "RAM (Random Access Memory) to pamięć odczytywalna i zapisywalna, używana do przechowywania danych tymczasowych",
-              "ROM (Read-Only Memory) to pamięć tylko do odczytu, w której dane są trwale zapisane i nie mogą być modyfikowane",
-              "RAM jest ulotna, co oznacza, że dane są tracone po wyłączeniu zasilania",
-              "ROM jest trwała, dane w niej przechowywane są trwale nawet po wyłączeniu zasilania"
+              "Scope określa, gdzie w kodzie programu dana zmienna jest dostępna.",
+              "Scope to metoda sortowania danych w programie.",
+              "Scope to nazwa popularnego frameworka programistycznego.",
+              "Scope to rodzaj błędu składniowego w programowaniu."
             ],
             "poprawna":1
           },
           {
-            "pytanie": "Jak działa protokół HTTP?",
-            "opis": "Wyjaśnij zasady działania protokołu HTTP.",
+            "pytanie": "Jakiego typu błąd występuje, gdy program nie ma wystarczającej pamięci do zadeklarowania nowej zmiennej?",
             "odp": [
-              "HTTP (Hypertext Transfer Protocol) to protokół komunikacyjny używany w World Wide Web",
-              "Działa na zasadzie żądanie-odpowiedź, gdzie przeglądarka wysyła żądanie, a serwer udziela odpowiedzi",
-              "Komunikacja opiera się na tekście i odnośnikach hipertekstowych",
-              "Standardowo używa portu 80, a komunikacja odbywa się w trybie bezstanowym"
+              "Błąd alokacji pamięci.",
+              "Błąd kompilacji.",
+              "Błąd czasu wykonania.",
+              "Błąd logiczny."
             ],
             "poprawna":1
           },
           {
-            "pytanie": "Co to jest algorytm szyfrowania AES?",
-            "opis": "Opisz algorytm Advanced Encryption Standard (AES).",
+            "pytanie": "Co to jest \"zmienna\" w programowaniu?",
             "odp": [
-              "AES to zaawansowany standard szyfrowania, stosowany do zabezpieczania danych",
-              "Wykorzystuje klucz do szyfrowania i deszyfrowania danych",
-              "Posiada trzy warianty z różnymi długościami klucza: 128-bitowy, 192-bitowy i 256-bitowy",
-              "Jest powszechnie używany w zabezpieczaniu danych w transmisji i przechowywaniu"
+              "Zmienna to symboliczna nazwa, która odnosi się do wartości przechowywanej w pamięci komputera.",
+              "Zmienna to funkcja matematyczna używana w programowaniu.",
+              "Zmienna to komunikat wyświetlany na ekranie w programie.",
+              "Zmienna to rodzaj błędu w programie, który powoduje jego awarię."
+            ],
+            "poprawna":1
+          },
+          {
+            "pytanie": "Co to jest pętla \"for\" w języku programowania?",
+            "odp": [
+              "Pętla \"for\" to konstrukcja umożliwiająca iterację przez zbiór elementów lub wykonanie określonej operacji określoną liczbę razy.",
+              "Pętla \"for\" służy do definiowania funkcji w programie.",
+              "Pętla \"for\" służy do wykonywania warunkowych operacji w programie.",
+              "Pętla \"for\" służy do manipulowania grafiką w programie."
+            ],
+            "poprawna":1
+          },
+          {
+            "pytanie": "Jakiego typu błąd występuje, gdy program nie ma wystarczającej pamięci do zadeklarowania nowej zmiennej?",
+            "odp": [
+              "Błąd alokacji pamięci",
+              "Błąd kompilacji",
+              "Błąd czasu wykonania",
+              "Błąd logiczny"
+            ],
+            "poprawna":1
+          },
+          {
+            "pytanie": "Co to jest \"debugowanie\" w kontekście programowania?",
+            "odp": [
+              "Debugowanie to proces optymalizacji kodu w programowaniu.",
+              "Debugowanie to proces tworzenia interfejsu użytkownika w programie.",
+              "Debugowanie to proces automatycznej generacji dokumentacji kodu.",
+              "Debugowanie to proces znajdowania i usuwania błędów w programie komputerowym."
             ],
             "poprawna":1
           }
