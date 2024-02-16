@@ -1,0 +1,41 @@
+.btns{
+    height: 200px;
+}
+
+.b{
+    margin: 2px;
+    border-radius: 10px;
+}
+
+.container-fluid{
+    padding: 20px;
+}
+
+.pytanie{
+    text-align: center;
+    color: white;
+}
+h3{
+    color: white;
+}
+
+body{
+    background-color: rgb(55, 23, 77);
+}
+
+.p0{
+    background-color:rgb(20, 145, 255);
+}
+
+.p1{
+    background-color:rgb(143, 203, 255);
+}
+
+.p2{
+    background-color:rgb(250, 207, 90);
+}
+
+.p3{
+    background-color:rgb(255, 100, 100);
+}
+
