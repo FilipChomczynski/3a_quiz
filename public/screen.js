@@ -51,14 +51,14 @@ function losujPytanie(element)
 czytajPytania()
 
 
-let btn = document.querySelectorAll(".btn");
+let btn = document.querySelectorAll(".b");
 
 btn.forEach(element => {
     element.addEventListener("click", e=>{
         if (pytanie.poprawna == element.id) {
             punkty++;
             window.localStorage.setItem = punkty;
-            console.log("jupi");
+            document.getElementById("punkty").innerText = "Punkty: " + punkty;
         }
         console.log(punkty);
         losujPytanie();
