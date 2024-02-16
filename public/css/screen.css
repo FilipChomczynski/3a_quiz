@@ -2,8 +2,9 @@
     height: 200px;
 }
 
-.btn{
+.b{
     margin: 2px;
+    border-radius: 10px;
 }
 
 .container-fluid{
