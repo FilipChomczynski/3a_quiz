@@ -1,15 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Oswald&display=swap');
+
+
+
 .btns{
-    height: 200px;
+    height: 50vh;
+    padding: 30px;
 }
 
 .b{
     margin: 2px;
     border-radius: 10px;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+
+}
+
+.b:hover{
+    filter: brightness(70%);
 }
 
 .container-fluid{
     padding: 20px;
 }
+
+
 
 .pytanie{
     text-align: center;
@@ -21,6 +40,7 @@ h3{
 
 body{
     background-color: rgb(55, 23, 77);
+    font-family: "Fredoka", sans-serif;
 }
 
 .p0{
@@ -32,7 +52,7 @@ body{
 }
 
 .p2{
-    background-color:rgb(250, 207, 90);
+    background-color:rgb(221, 183, 80);
 }
 
 .p3{

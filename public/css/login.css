@@ -1,35 +1,38 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Oswald&display=swap');
 
-h2 {
-    color: #333333;
-    text-align: center;
-    margin-bottom: 20px; 
-}
-
-input {
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4caf50;
+body{
+    background-color: rgb(55, 23, 77);
+    font-family: "Fredoka", sans-serif;
     color: white;
-    cursor: pointer;
+    padding: 100px;
+    
 }
 
-button:hover {
-    background-color: #45a049;
+h1{
+    font-size: 300%;
+}
+
+input{
+    font-family: "Fredoka", sans-serif;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+button{
+    font-family: "Fredoka", sans-serif;
+    background-color: rgb(59, 164, 255);
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    padding: 12px 20px;
+    width: 7%;
+    color: white;
+}
+
+button:hover{
+    filter: brightness(70%);
+}
+
+.login{
+    text-align: center;
 }

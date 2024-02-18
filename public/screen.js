@@ -33,7 +33,7 @@ function losujPytanie(element)
         czytajPytania();
     }
     pytanie.wylosowane = true;
-    $('.pytanie').innerHTML = pytanie.pytanie;
+    $('.pytanie>h3').innerHTML = pytanie.pytanie;
     for(let i=0;i<pytanie.odp.length; i++) {
         $(`.p${i}`).innerHTML = pytanie.odp[i];
         $(`.p${i}`).id = i;
