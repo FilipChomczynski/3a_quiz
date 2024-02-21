@@ -30,7 +30,7 @@ function losujPytanie(element)
     console.log(pytanie);
     if(!pytanie)
     {
-        czytajPytania();
+        alert("koniec skurwysynu")
     }
     pytanie.wylosowane = true;
     $('.pytanie>h3').innerHTML = pytanie.pytanie;
@@ -46,9 +46,12 @@ function losujPytanie(element)
             console.log("jupi");
         }
     }
+    document.querySelector("body").style.backgroundColor = "rgb(55, 23, 77)";
 }
 
 czytajPytania()
+
+
 
 
 let btn = document.querySelectorAll(".b");
@@ -57,10 +60,18 @@ btn.forEach(element => {
     element.addEventListener("click", e=>{
         if (pytanie.poprawna == element.id) {
             punkty++;
-            window.localStorage.setItem = punkty;
+            window.localStorage.setItem("punkty", punkty);
             document.getElementById("punkty").innerText = "Punkty: " + punkty;
+            document.querySelector("body").style.backgroundColor = "green";
+            setTimeout(losujPytanie,1000);
+            // document.querySelector("body").style.backgroundColor = "rgb(55, 23, 77)";
+        }
+        else{
+            document.querySelector("body").style.backgroundColor = "red";
+            setTimeout(losujPytanie,1000);
+            // document.querySelector("body").style.backgroundColor = "rgb(55, 23, 77)";
         }
         console.log(punkty);
-        losujPytanie();
+        // losujPytanie();
     })
 });
