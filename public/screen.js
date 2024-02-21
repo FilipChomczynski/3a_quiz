@@ -14,6 +14,7 @@ let pytanie;
 const $=name=>document.querySelector(name);
 
 function czytajPytania(){
+    localStorage.setItem("punkty", 0);
     fetch('pytania.json')
     .then(e=>e.json())
     .then(j=>{

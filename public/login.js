@@ -9,12 +9,10 @@ document.querySelector("#joinbtn").addEventListener('click', ()=>{
         }
     console.log(UID);
 
-    let username = window.localStorage.getItem("username");
-    if(!username)
-    {
-        let usernameValue = document.querySelector("#username").value;
-        window.localStorage.setItem("username", usernameValue);
-    }
+    
+    let usernameValue = document.querySelector("#username").value;
+    window.localStorage.setItem("username", usernameValue);
+    
     
     let connect = io('ws://localhost:3000');
     //console.log(connect)
