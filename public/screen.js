@@ -31,7 +31,8 @@ function losujPytanie(element)
     console.log(pytanie);
     if(!pytanie)
     {
-        alert("koniec skurwysynu")
+        connect.emit("koniec", localStorage.getItem("punkty"), localStorage.getItem("username"));
+        console.log("s");
     }
     pytanie.wylosowane = true;
     $('.pytanie>h3').innerHTML = pytanie.pytanie;
