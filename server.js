@@ -32,7 +32,7 @@ io.on("connection", client=>{
      })
      client.on("koniec", (number, string) =>{
         let c;
-        let i = fs.readFile('tablica_wyników.json', (err, inputD) => {
+        let i = fs.readFile('./public/tablica_wynikow.json', (err, inputD) => {
             if (err) throw err;
             
             console.log(inputD.toString());
@@ -42,7 +42,7 @@ io.on("connection", client=>{
                 points: number
             })
             j = JSON.stringify(jsonn);
-            fs.writeFile('tablica_wyników.json', j, (err) => {
+            fs.writeFile('./public/tablica_wynikow.json', j, (err) => {
                 if (err) throw err;
                 else{
                 console.log("The file is updated with the given data")
@@ -55,7 +55,7 @@ io.on("connection", client=>{
         //     points: number
         // })
         // j = JSON.stringify(jsonn);
-        // fs.writeFile('tablica_wyników.json', j, (err) => {
+        // fs.writeFile('./public/tablica_wynikow.json', j, (err) => {
         //     if (err) throw err;
         //     else{
         //        console.log("The file is updated with the given data")
