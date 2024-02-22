@@ -32,7 +32,8 @@ function losujPytanie(element)
     if(!pytanie)
     {
         connect.emit("koniec", localStorage.getItem("punkty"), localStorage.getItem("username"));
-        console.log("s");
+        window.location = "/end.html"
+
     }
     pytanie.wylosowane = true;
     $('.pytanie>h3').innerHTML = pytanie.pytanie;
