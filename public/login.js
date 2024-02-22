@@ -1,8 +1,8 @@
 
 document.querySelector("#joinbtn").addEventListener('click', () => {
-    let usernameValue = document.querySelector("#username").value.trim(); // Pobierz nazwę użytkownika i usuń białe znaki z początku i końca
+    let usernameValue = document.querySelector("#username").value.trim(); 
 
-    if (usernameValue !== "") { // Sprawdź, czy nazwa użytkownika nie jest pusta
+    if (usernameValue !== "") {
         let UID = window.localStorage.getItem("UID");
 
         if (!UID) {
