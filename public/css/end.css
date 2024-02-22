@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(55, 23, 77);
+    font-family: "Fredoka", sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    color: white;
+}
+
+tr {
+    text-align: center;
+}
+
+.table-head {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+
+.table-row {
+    text-align: center;
+}
