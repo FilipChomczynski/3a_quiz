@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 const env = require('dotenv');
-env.config(); // process.env.host
+env.config(); // process.env.hostconst fs = require('fs');
+const fs = require('fs');
 
 app.use(express.static(__dirname+'/public'));
 let server = app.listen(3000, ()=>{
@@ -29,4 +30,39 @@ io.on("connection", client=>{
             klienci.push(kl);
         }
      })
+     client.on("koniec", (number, string) =>{
+        let c;
+        let i = fs.readFile('tablica_wyników.json', (err, inputD) => {
+            if (err) throw err;
+            
+            console.log(inputD.toString());
+            let jsonn = JSON.parse(inputD.toString());
+            jsonn.push({
+                name: string,
+                points: number
+            })
+            j = JSON.stringify(jsonn);
+            fs.writeFile('tablica_wyników.json', j, (err) => {
+                if (err) throw err;
+                else{
+                console.log("The file is updated with the given data")
+            }
+         })
+         })
+        // let jsonn = JSON.parse(c);
+        // jsonn.push({
+        //     name: string,
+        //     points: number
+        // })
+        // j = JSON.stringify(jsonn);
+        // fs.writeFile('tablica_wyników.json', j, (err) => {
+        //     if (err) throw err;
+        //     else{
+        //        console.log("The file is updated with the given data")
+        //     }
+        //  })
+        // console.log(c)
+        })
+        
+     
 });
